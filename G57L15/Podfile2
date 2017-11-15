@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'GetGiphy' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GetGiphy
+
+pod 'IQKeyboardManagerSwift'
+pod 'SwiftyJSON'
+pod 'RealmSwift'
+pod 'Siesta'
+pod 'Fabric'
+pod 'Crashlytics'
+
+  target 'GetGiphyTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'GetGiphyUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

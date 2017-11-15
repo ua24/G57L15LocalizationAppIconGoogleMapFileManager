@@ -12,6 +12,11 @@
 		4C1FDDA91FBB5B090013CDDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1FDDA71FBB5B090013CDDA /* Main.storyboard */; };
 		4C1FDDAB1FBB5B090013CDDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C1FDDAA1FBB5B090013CDDA /* Assets.xcassets */; };
 		4C1FDDAE1FBB5B090013CDDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C1FDDAC1FBB5B090013CDDA /* LaunchScreen.storyboard */; };
+		4C1FDDB61FBB5E3B0013CDDA /* Untitled2.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4C1FDDB51FBB5E3B0013CDDA /* Untitled2.rtf */; };
+		4C1FDDBA1FBB5F100013CDDA /* Podfile2 in Resources */ = {isa = PBXBuildFile; fileRef = 4C1FDDB91FBB5F100013CDDA /* Podfile2 */; };
+		4CCD593E1FBB638700F7C957 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCD593D1FBB638700F7C957 /* MapViewController.swift */; };
+		4CCD59431FBB797400F7C957 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CCD59451FBB797400F7C957 /* Localizable.strings */; };
+		F5391F9AA298640788D251CD /* Pods_G57L15.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5923C93CE0ED51CC109E4703 /* Pods_G57L15.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,16 @@
 		4C1FDDAA1FBB5B090013CDDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C1FDDAD1FBB5B090013CDDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C1FDDAF1FBB5B090013CDDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C1FDDB51FBB5E3B0013CDDA /* Untitled2.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Untitled2.rtf; sourceTree = "<group>"; };
+		4C1FDDB91FBB5F100013CDDA /* Podfile2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile2; sourceTree = "<group>"; };
+		4CCD593D1FBB638700F7C957 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4CCD593F1FBB770B00F7C957 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		4CCD59401FBB770B00F7C957 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		4CCD59441FBB797400F7C957 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4CCD59461FBB798000F7C957 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5923C93CE0ED51CC109E4703 /* Pods_G57L15.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_G57L15.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		949AD9432C8087C300B65F67 /* Pods-G57L15.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-G57L15.debug.xcconfig"; path = "Pods/Target Support Files/Pods-G57L15/Pods-G57L15.debug.xcconfig"; sourceTree = "<group>"; };
+		D0F3C6F9C3C0A65904AF5854 /* Pods-G57L15.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-G57L15.release.xcconfig"; path = "Pods/Target Support Files/Pods-G57L15/Pods-G57L15.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5391F9AA298640788D251CD /* Pods_G57L15.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +56,8 @@
 			children = (
 				4C1FDDA21FBB5B090013CDDA /* G57L15 */,
 				4C1FDDA11FBB5B090013CDDA /* Products */,
+				BE90881892D99FB279220CFC /* Pods */,
+				C6EC37FAD09C9F7D9203A189 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +72,35 @@
 		4C1FDDA21FBB5B090013CDDA /* G57L15 */ = {
 			isa = PBXGroup;
 			children = (
+				4CCD593D1FBB638700F7C957 /* MapViewController.swift */,
 				4C1FDDA31FBB5B090013CDDA /* AppDelegate.swift */,
 				4C1FDDA51FBB5B090013CDDA /* ViewController.swift */,
 				4C1FDDA71FBB5B090013CDDA /* Main.storyboard */,
 				4C1FDDAA1FBB5B090013CDDA /* Assets.xcassets */,
 				4C1FDDAC1FBB5B090013CDDA /* LaunchScreen.storyboard */,
 				4C1FDDAF1FBB5B090013CDDA /* Info.plist */,
+				4C1FDDB51FBB5E3B0013CDDA /* Untitled2.rtf */,
+				4C1FDDB91FBB5F100013CDDA /* Podfile2 */,
+				4CCD59451FBB797400F7C957 /* Localizable.strings */,
 			);
 			path = G57L15;
+			sourceTree = "<group>";
+		};
+		BE90881892D99FB279220CFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				949AD9432C8087C300B65F67 /* Pods-G57L15.debug.xcconfig */,
+				D0F3C6F9C3C0A65904AF5854 /* Pods-G57L15.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C6EC37FAD09C9F7D9203A189 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5923C93CE0ED51CC109E4703 /* Pods_G57L15.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C1FDDB21FBB5B090013CDDA /* Build configuration list for PBXNativeTarget "G57L15" */;
 			buildPhases = (
+				279B0C680C616BBDDC5C5955 /* [CP] Check Pods Manifest.lock */,
 				4C1FDD9C1FBB5B090013CDDA /* Sources */,
 				4C1FDD9D1FBB5B090013CDDA /* Frameworks */,
 				4C1FDD9E1FBB5B090013CDDA /* Resources */,
+				B3657A50B5CD4EBB1D10DD0C /* [CP] Embed Pods Frameworks */,
+				AF9E297A5FAF559AFD5DD8AD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -107,6 +149,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 4C1FDD971FBB5B090013CDDA;
 			productRefGroup = 4C1FDDA11FBB5B090013CDDA /* Products */;
@@ -124,12 +167,81 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C1FDDAE1FBB5B090013CDDA /* LaunchScreen.storyboard in Resources */,
+				4CCD59431FBB797400F7C957 /* Localizable.strings in Resources */,
 				4C1FDDAB1FBB5B090013CDDA /* Assets.xcassets in Resources */,
+				4C1FDDBA1FBB5F100013CDDA /* Podfile2 in Resources */,
+				4C1FDDB61FBB5E3B0013CDDA /* Untitled2.rtf in Resources */,
 				4C1FDDA91FBB5B090013CDDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		279B0C680C616BBDDC5C5955 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-G57L15-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF9E297A5FAF559AFD5DD8AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-G57L15/Pods-G57L15-resources.sh",
+				"${PODS_ROOT}/AccountKit/AccountKitStrings.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-G57L15/Pods-G57L15-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3657A50B5CD4EBB1D10DD0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-G57L15/Pods-G57L15-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-G57L15/Pods-G57L15-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C1FDD9C1FBB5B090013CDDA /* Sources */ = {
@@ -137,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C1FDDA61FBB5B090013CDDA /* ViewController.swift in Sources */,
+				4CCD593E1FBB638700F7C957 /* MapViewController.swift in Sources */,
 				4C1FDDA41FBB5B090013CDDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +261,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C1FDDA81FBB5B090013CDDA /* Base */,
+				4CCD593F1FBB770B00F7C957 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -156,8 +270,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C1FDDAD1FBB5B090013CDDA /* Base */,
+				4CCD59401FBB770B00F7C957 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4CCD59451FBB797400F7C957 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CCD59441FBB797400F7C957 /* en */,
+				4CCD59461FBB798000F7C957 /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -167,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -224,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -272,6 +398,7 @@
 		};
 		4C1FDDB31FBB5B090013CDDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 949AD9432C8087C300B65F67 /* Pods-G57L15.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +414,7 @@
 		};
 		4C1FDDB41FBB5B090013CDDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0F3C6F9C3C0A65904AF5854 /* Pods-G57L15.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
