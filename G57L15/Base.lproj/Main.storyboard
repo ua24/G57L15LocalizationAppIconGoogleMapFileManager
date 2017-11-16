@@ -19,23 +19,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLg-ba-pNe">
-                                <rect key="frame" x="118" y="20" width="84" height="21"/>
+                                <rect key="frame" x="118.5" y="20" width="83.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOv-hg-ZiL">
-                                <rect key="frame" x="139" y="49" width="42" height="21"/>
+                                <rect key="frame" x="139" y="48.5" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yls-Ru-bST">
-                                <rect key="frame" x="0.0" y="78" width="320" height="402"/>
+                                <rect key="frame" x="0.0" y="77" width="320" height="363"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="embed" id="PF7-BH-DAk"/>
                                 </connections>
                             </containerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="u3W-jO-aMe">
+                                <rect key="frame" x="0.0" y="448" width="98" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdQ-hr-Ybi">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="sms"/>
+                                        <connections>
+                                            <action selector="smsLogin:" destination="5bk-RF-aKD" eventType="touchUpInside" id="X84-QU-PaQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acU-M6-X4c">
+                                        <rect key="frame" x="61" y="0.0" width="37" height="30"/>
+                                        <state key="normal" title="email"/>
+                                        <connections>
+                                            <action selector="verificateEmail:" destination="5bk-RF-aKD" eventType="touchUpInside" id="F2d-N2-B6e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.69798475500000001" green="0.69806993009999996" blue="0.69795572760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -43,10 +62,12 @@
                             <constraint firstItem="GOv-hg-ZiL" firstAttribute="top" secondItem="dLg-ba-pNe" secondAttribute="bottom" constant="8" id="60E-ef-gos"/>
                             <constraint firstItem="yls-Ru-bST" firstAttribute="trailing" secondItem="0Lo-Q3-uDB" secondAttribute="trailing" id="DhK-2y-aaF"/>
                             <constraint firstItem="yls-Ru-bST" firstAttribute="leading" secondItem="0Lo-Q3-uDB" secondAttribute="leading" id="Zxa-vo-aqx"/>
+                            <constraint firstItem="u3W-jO-aMe" firstAttribute="leading" secondItem="0Lo-Q3-uDB" secondAttribute="leading" id="h2D-tX-TJ9"/>
                             <constraint firstItem="yls-Ru-bST" firstAttribute="top" secondItem="GOv-hg-ZiL" secondAttribute="bottom" constant="8" id="jLQ-bp-Aqf"/>
-                            <constraint firstItem="yls-Ru-bST" firstAttribute="bottom" secondItem="0Lo-Q3-uDB" secondAttribute="bottom" id="slW-Gb-jr9"/>
+                            <constraint firstItem="yls-Ru-bST" firstAttribute="bottom" secondItem="0Lo-Q3-uDB" secondAttribute="bottom" constant="-40" id="slW-Gb-jr9"/>
                             <constraint firstItem="GOv-hg-ZiL" firstAttribute="centerX" secondItem="dLg-ba-pNe" secondAttribute="centerX" id="wYc-4S-KQp"/>
                             <constraint firstItem="dLg-ba-pNe" firstAttribute="top" secondItem="0Lo-Q3-uDB" secondAttribute="top" id="yql-BW-z7g"/>
+                            <constraint firstItem="u3W-jO-aMe" firstAttribute="top" secondItem="yls-Ru-bST" secondAttribute="bottom" constant="8" id="zTi-OF-Ve3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0Lo-Q3-uDB"/>
                     </view>
@@ -63,7 +84,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="G57L15" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="402"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="363"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

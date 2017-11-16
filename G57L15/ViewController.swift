@@ -9,10 +9,15 @@
 import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+import AccountKit
 
 class ViewController: UIViewController {
 
 	@IBOutlet weak var subtitleLabel: UILabel!
+	
+	var _accountKit: AKFAccountKit!
+	var _pendingLoginViewController: AKFViewController!
+	var _authorizationCode: String!
 	
 	let subtitleText = NSLocalizedString("subtitleKey", comment: "subtitle on map screen")
 	
@@ -33,8 +38,32 @@ class ViewController: UIViewController {
 		loginButton.center = self.view.center;
 		self.view.addSubview(loginButton)
 		
+		// Do any additional setup after loading the view.
+		_accountKit = AKFAccountKit.init(responseType: .accessToken)
+		let number = AKFPhoneNumber.init(countryCode: "+380", phoneNumber: "930736656")
+		_pendingLoginViewController = _accountKit.viewControllerForPhoneLogin(with: number, state: "Ukraine")
+		_pendingLoginViewController = _accountKit.viewControllerForPhoneLogin(with: number, state: "Ukraine")//_accountKit.viewControllerForEmailLogin(withEmail: "ua2345@gmail.com", state: "Ukraine")
+		print(_pendingLoginViewController)
+		
 	}
 
+	@IBAction func smsLogin(_ sender: Any) {
+		_pendingLoginViewController.delegate = self
+		present(_pendingLoginViewController as! UIViewController, animated: true, completion: nil)
+	}
+	
+	@IBAction func verificateEmail(_ sender: Any) {
+		_pendingLoginViewController = _accountKit.viewControllerForEmailLogin(withEmail: "ua2345@gmail.com", state: "Ukraine")
+		present(_pendingLoginViewController as! UIViewController, animated: true, completion: nil)
+	}
+	
+	
+}
+
+extension ViewController: AKFViewControllerDelegate {
+	func viewController(_ viewController: (UIViewController & AKFViewController)!, didCompleteLoginWith accessToken: AKFAccessToken!, state: String!) {
+		print(accessToken)
+	}
 }
 
 

@@ -15,11 +15,14 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>fb924037161025794</string>
+				<string>ak924037161025794</string>
 			</array>
 		</dict>
 	</array>
 	<key>FacebookAppID</key>
 	<string>924037161025794</string>
+	<key>AccountKitClientToken</key>
+	<string>373754efebb18098cac62f3b8d80355b</string>
 	<key>FacebookDisplayName</key>
 	<string>Multithreading</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
